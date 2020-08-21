@@ -20,10 +20,11 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-
+\usepackage{CJKutf8}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
-\name{LI Geng} % Your name
+\begin{CJK}{UTF8}{gbsn}
+\name{李庚} % Your name
 \address{https://stackoverflow.com/users/486149/angus-lee} % Personal websites
 \address{(+86)13xxxxxxxxx \\ angus.lee8329@gmail.com} % Phone number and email
 
@@ -32,12 +33,10 @@
 %----------------------------------------------------------------------------------------
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Summary}
-
-\item Experienced in web server developing, Linux system performance analysis and planning, JVM performance tuning and good with multiple programming languages such as C/C++, Java, Common Lisp and Scala;
-\item Experienced tech team manager: up to group of 40 engineers;
-\item Trilingual: Chinese (Native), English (Proficient), French (Average)
-
+\begin{rSection}{个人简介}
+  \item 熟悉Web后端研发，Linux操作系统级别的性能分析与容量规划, JVM性能调优；熟悉C/C++, Java, Common Lisp, Scala等程序设计语言;
+  \item 熟悉技术团队管理；
+  \item 熟练掌握英语
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -58,36 +57,37 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{职业经历}
 
-\begin{rSubsection}{Qunar, Inc}{July 2010 - June 2020}{Senior Software Developing Engineer}{Beijing, CHINA}
-\item Technical lead for dujia.qunar.com BU
+\begin{rSubsection}{去哪儿网 (www.qunar.com)}{2010/07 - 2020/06}{软件研发工程师}{北京}
+
+\item Qunar旅游度假事业部技术总监
   \begin{itemize}
-    \item Search engine architect, development and optimization;
-    \item Bidding advertising system architect and design;
+    \item 旅游度假搜索服务架构设计与开发运维;
+    \item 旅游度假竞价排名系统架构设计与开发运维；
     \item {
-        Application performance analysis and optimization at JVM and operating system level to reduce the cost of computing resource:
+        Linux操作系统和Java虚拟机层面的持续性能优化：
         \begin{itemize}
-        \item { Eliminate network bandwidth saturation: lower P98 performance metric of search engine request latency by 60\%; }
-        \item { Fix cpu saturation issue due to memory leak: lower variance of request latency and improved P75 and P98 performance metrics; }
-        \item { JVM performance comparison and tuning: further improved P75 and P98 performance metrics by about 15\% through JDK upgrade from 8 to 11. }
+        \item { 消除搜索引擎服务对网络带宽的过度使用，使搜索引擎服务的P98响应时间指标降低60\%; }
+        \item { 消除内存泄漏导致的CPU过度占用，提升了整体服务性能且降低了响应时间的波动； }
+        \item { JVM性能评估与调优：JDK8升级到JDK11，提升服务性能约15\% }
         \end{itemize}
       }
-    \item Manage tech team's workflow.
+    \item 旅游度假技术团队的开发流程规范制定
   \end{itemize}
-\item Member of corperation-wide Tech Committee
+\item Qunar技术委员会成员
   \begin{itemize}
-  \item Work out corperation-wide promotion guidelines for tech staff on Java and Python development;
-  \item Standardize procedures for Java code submission and product release on occassions of risky codes;
-  \item Review presentations of promotion to high tech levels.
+  \item 制定全公司级别Java和Python两个技术线的统一职级晋升评审标准；
+  \item 规范全公司层面的Java代码的书写标准以及风险代码提交的管理流程；
+  \item 负责全公司层面高级别技术晋升答辩评审。
   \end{itemize}
   
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Baidu, Inc (www.baidu.com)}{October 2009 - December 2009}{Intern Software Engineer}{Beijing, CHINA}
-\item Participated in the development of storage and computing infrastructure for big data.
+\begin{rSubsection}{百度公司 (www.baidu.com)}{2009/10 - 2009/12}{实习软件工程师}{北京}
+\item 参与大数据存储计算平台系统研发团队
 \end{rSubsection}
 
 \end{rSection}
@@ -100,16 +100,15 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
+\begin{rSection}{教育背景}
 
-{\bf Peking University, Beijing} \hfill {\em July 2010} \\ 
-M.S. in Computer Science And Technology \\
-Internship at the Fencing Hall of National Convention Center of BOCOG \\
-Head of fencing club of the JING WU society from 2009 to 2010 
+{\bf 北京大学} \hfill {\em 2010/07} \\ 
+信息科学技术学院计算机系统结构专业，硕士 \\
+北京奥组委国家会议中心击剑馆实习生
 
-{\bf Peking University, Beijing} \hfill {\em July 2006} \\ 
-B.S. in Computer Science And Technology \\
-Minor in French
+{\bf 北京大学} \hfill {\em 2006/07} \\ 
+主修计算机科学与技术专业，学士 \\
+辅修法语
 
 \end{rSection}
 
@@ -127,3 +126,4 @@ Minor in French
 %----------------------------------------------------------------------------------------
 
 \end{document}
+\end{CJK}
