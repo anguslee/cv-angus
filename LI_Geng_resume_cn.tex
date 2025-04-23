@@ -21,22 +21,25 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{CJKutf8}
+\usepackage[T1]{fontenc}
 \usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.2in]{geometry} % Document margins
 
 \begin{CJK}{UTF8}{gbsn}
+
 \name{李庚} % Your name
 \address{https://stackoverflow.com/users/486149/angus-lee} % Personal websites
 \address{(+86) 13xxxxxxxxx \\ angus.lee8329@gmail.com} % Phone number and email
 
 \begin{document}
 
+
 %----------------------------------------------------------------------------------------
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{个人简介}
-  \item 熟悉 Web 后端研发，Linux 操作系统级别的性能分析与容量规划, JVM 性能调优；熟悉 C/C++, Java, Common Lisp, Scala, Python 等程序设计语言；
-  \item 熟悉技术团队管理；
-  \item 熟练掌握英语。
+  \item 擅于软件系统架构、软件研发管理、分析工程问题并创造性的制定并实施解决方案，长期担任软件信息系统技术负责人；
+  \item 主要技术栈：Linux 操作系统，C/C++, Java Spring Cloud, Shell 等；涉猎：Vue, Flutter 等；
+  \item 外语能力：英语、法语。
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -58,6 +61,16 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{职业经历}
+
+  \begin{rSubsection}{龙盈智达（北京）科技有限公司}{2022/04 至今}{资深软件工程师}{北京}
+  \item 数字人民币项目技术负责人:
+    \begin {itemize}
+    \item 数字人民币软件产品持续集成流程管理；
+    \item 持续集成管理工具研发；
+    \item 数字人民币第三方环境仿真平台架构设计与研发。
+    \end{itemize}
+  \item 2024 年度优秀员工。
+  \end{rSubsection}
 
   \begin{rSubsection}{OpenResty.com, Inc}{2020/07 - 2021/09}{软件研发工程师}{北京}
   \item OpenResty 产品研发:
@@ -127,5 +140,5 @@
 
 % ----------------------------------------------------------------------------------------
 
-\end{CJK}
 \end{document}
+\end{CJK}
